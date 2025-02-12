@@ -1,4 +1,5 @@
 // Method - 1
+
 async function MyPromise() {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -13,10 +14,12 @@ async function MyPromise() {
 MyPromise();
 
 // Method - 2
+
 async function myDisplay() {
   let x = 0;
 
   let myPromise = new Promise(function (resolve, reject) {
+
     if (x === 0) {
       setTimeout(() => {
         resolve("I love JavaScript😘 !!");
@@ -26,6 +29,7 @@ async function myDisplay() {
         reject("I Just hate JavaScript 😒");
       }, 4000);
     }
+
   });
 
   try {
