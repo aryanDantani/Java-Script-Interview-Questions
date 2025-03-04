@@ -117,3 +117,42 @@ function outerFunction(outerVar) {
 
 const myClosure = outerFunction('Hello');
 myClosure('World'); // Output: Hello World
+
+## 4. Async/Await in JavaScript ##
+
+## Overview
+Async/await is syntactic sugar built on top of Promises in JavaScript, designed to make asynchronous code easier to read and write. It allows asynchronous operations to be written in a more synchronous style, improving code readability and maintainability.
+
+## How It Works
+- The `async` keyword is used to define an asynchronous function, which implicitly returns a Promise.
+- The `await` keyword can only be used inside an `async` function and is used to pause the execution of the function until a Promise is resolved or rejected.
+- When a Promise is awaited, the `async` function pauses its execution, allowing other code to run, and resumes when the Promise is settled.
+
+## Error Handling
+Error handling in async/await is done using `try...catch` blocks, similar to synchronous code. This makes it easier to handle errors that may occur during asynchronous operations.
+
+## Example
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+
+## Benefits of Async/Await
+- Improves code readability by eliminating nested `.then()` chains.
+- Simplifies error handling with `try...catch`.
+- Makes asynchronous code look and behave more like synchronous code.
+
+## Conclusion
+Using async/await in JavaScript simplifies handling asynchronous operations, making code easier to read and maintain. It is a powerful alternative to Promises and callback-based approaches.
+
+---
+
+Feel free to contribute or raise issues if you find any improvements!
+
+## License
+This project is licensed under the MIT License.
