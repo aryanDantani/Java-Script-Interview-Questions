@@ -28,7 +28,6 @@ Promises provide methods to handle these states:
 
 ### Example Usage:
 
-```javascript
 const myPromise = new Promise((resolve, reject) => {
   let success = true;
   
@@ -75,7 +74,6 @@ Variables declared with `let` and `const` are also hoisted, but they are not ini
 
 #### Examples:
 
-```javascript
 // var Hoisting
 console.log(a);  // undefined
 var a = 5;
