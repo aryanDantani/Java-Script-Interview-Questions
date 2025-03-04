@@ -156,3 +156,39 @@ Feel free to contribute or raise issues if you find any improvements!
 
 ## License
 This project is licensed under the MIT License.
+
+## 5. Prototype in JavaScript ##
+
+Overview
+
+In JavaScript, a prototype is an object associated with every function and object by default. It serves as a blueprint for other objects, allowing them to inherit properties and methods.
+
+When trying to access a property or method of an object, the JavaScript engine first looks within the object itself. If it's not found, the engine then searches the object's prototype, and so on up the prototype chain until the property or method is found, or the end of the chain is reached.
+
+Example
+
+function Dog(name) {
+  this.name = name;
+}
+
+Dog.prototype.bark = function() {
+  return "Woof!";
+}
+
+const myDog = new Dog("Buddy");
+console.log(myDog.name); // Output: Buddy
+console.log(myDog.bark()); // Output: Woof!
+
+Explanation
+
+In this example:
+
+Dog.prototype is the prototype object for all instances of the Dog constructor function.
+
+The bark method is added to the prototype, making it accessible to all Dog objects like myDog.
+
+This mechanism promotes code reuse and efficiency by avoiding duplication of methods across multiple instances.
+
+Conclusion
+
+Using async/await in JavaScript simplifies handling asynchronous operations, making code easier to read and maintain. Likewise, understanding prototypes helps in creating efficient and reusable code through inheritance.
