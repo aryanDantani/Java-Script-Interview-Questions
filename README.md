@@ -49,8 +49,6 @@ myPromise
     console.log("Promise operation complete.");
   });
 
-# JavaScript Interview Questions and Answers
-
 ## 2. Hoisting in JavaScript
 
 **Hoisting** is a behavior in JavaScript where variable and function declarations are moved to the top of their respective scopes during the compilation phase before code execution. It allows you to use variables and functions before they are declared in the code. However, it’s important to understand how hoisting works with different types of declarations.
