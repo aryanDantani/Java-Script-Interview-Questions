@@ -81,3 +81,39 @@ console.log(a);  // 5
 console.log(b);  // ReferenceError: Cannot access 'b' before initialization
 let b = 10;
 
+## 3. Closures in JavaScript
+
+In JavaScript, a **closure** is the combination of a function and the **lexical environment** within which that function was declared. The lexical environment consists of any variables that were in scope at the time the function was created. 
+
+A closure allows the inner function to access variables from the outer function's scope, even after the outer function has returned. This feature enables powerful capabilities such as data encapsulation, state preservation, and the creation of function factories.
+
+### Table of Contents
+1. [What is a Closure?](#what-is-a-closure)
+2. [How Closures Work](#how-closures-work)
+3. [Example of a Closure](#example-of-a-closure)
+4. [Use Cases of Closures](#use-cases-of-closures)
+5. [Summary](#summary)
+
+---
+
+### 1. What is a Closure?
+
+A closure in JavaScript is formed when a function is defined within another function, allowing the inner function to access variables from the outer function, even after the outer function has finished execution. Closures "remember" the environment in which they were created, making them powerful for tasks that require state persistence.
+
+### 2. How Closures Work
+
+In JavaScript, functions have access to their own scope, the scope in which they were defined, and the global scope. When a function is created within another function, it forms a closure with the outer function's scope. This means the inner function can continue to access the outer function's variables even after the outer function has returned.
+
+### 3. Example of a Closure
+
+Here’s a simple example of how closures work in JavaScript:
+
+function outerFunction(outerVar) {
+  function innerFunction(innerVar) {
+    console.log(outerVar, innerVar);
+  }
+  return innerFunction;
+}
+
+const myClosure = outerFunction('Hello');
+myClosure('World'); // Output: Hello World
