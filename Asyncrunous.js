@@ -8,8 +8,8 @@ function AsignTask2() {
   }, 2000);
   console.log("End of script");
 }
-
 AsignTask();
+
 
 
 
