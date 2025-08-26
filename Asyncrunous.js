@@ -9,9 +9,3 @@ function AsignTask2() {
   console.log("End of script");
 }
 AsignTask();
-
-
-
-
-
-
