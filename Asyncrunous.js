@@ -6,12 +6,12 @@ function AsignTask2() {
   setTimeout(function () {
     console.log("First timeout completed");
   }, 2000);
-
   console.log("End of script");
   
 }
 
 AsignTask();
+
 
 
 
