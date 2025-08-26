@@ -2,7 +2,6 @@
 Asynchronous Programming / Asynchronous Function
 */
 function AsignTask2() {
-
   console.log("Start of script");
 
   setTimeout(function () {
@@ -14,4 +13,5 @@ function AsignTask2() {
 }
 
 AsignTask();
+
 
