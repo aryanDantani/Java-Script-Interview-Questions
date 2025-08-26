@@ -7,10 +7,10 @@ function AsignTask2() {
     console.log("First timeout completed");
   }, 2000);
   console.log("End of script");
-  
 }
 
 AsignTask();
+
 
 
 
